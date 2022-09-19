@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d4d2d2;
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.container {
+   height:100vh;
+   wight:100vw;
+}
+.shaped {
+   background: black url(img/kruassan.jpg) center top no-repeat;
+   height:100vh;
+   width:40vw;
+   background-size:cover;
+   float:right;
+   shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+   shape-margin:20px;
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%)
+}
+
+.circle {
+   float:left;
+   shape-outside: circle(50%);
+   width:400px;
+   height:400px;
+   display: inline-block;
+   border-radius: 50%;
+   overflow: hidden;
+
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+.social-icons>li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.social-icons a {
+  position: relative;
+  background-color: #eee;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 6rem;
+  height: 6rem;
+  border-radius: .25rem;
+}
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 5.5rem;
+  height: 5.5rem;
+  left: .3rem;
+  top: .3rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.social-icons .social-icon-vk::before {
+  background-image: url(img/vk_icon.png);
+}
+.social-icons .social-icon-telegram::before {
+  background-image: url(img/telegram_icon.png);
+}
+.social-icons .social-icon-leetcode::before {
+  background-image: url(img/leetcode_icon.jpg);
+}
